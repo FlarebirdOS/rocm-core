@@ -1,6 +1,6 @@
 pkgname=rocm-core
-pkgver=6.4.4
-pkgrel=1
+pkgver=7.0.1
+pkgrel=2
 pkgdesc="AMD ROCm core package (version files)"
 arch=('x86_64')
 url="https://rocm.docs.amd.com/en/latest/"
@@ -11,7 +11,7 @@ depends=(
 )
 makedepends=('cmake')
 source=(https://github.com/ROCm/rocm-core/archive/refs/tags/rocm-${pkgver}/${pkgname}-rocm-${pkgver}.tar.gz)
-sha256sums=(ec5ef028823b863c83d098ca22343febf9e15a778c71f19e10a52eece50f7fed)
+sha256sums=(d35b0a11b888bea9bbd6c87150f46ea709d8aa943a635d6f4d2a69fc9be5ab8d)
 
 build() {
     cd ${pkgname}-rocm-${pkgver}
